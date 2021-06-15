@@ -4,12 +4,6 @@
     min-height: 25rem;
 }
 
-.saving-held {
-    width: 100px;
-    height: 34px;
-    border: solid 1px black;
-    border-radius: 0.30rem;
-    background-color: white;
-    margin: audio;
-    padding: 5px;
+#instant {
+    width: 35px;
 }

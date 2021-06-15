@@ -41,25 +41,25 @@
       <!-- Hero shelf & calculator inputs-->
       <div id="hero">
          <div class="container-fluid">
-            <form class="px-4 py-3">
-               <div class="mb-3">
-                  <label for="savings-held" class="savings">Savings</label>
-                  <input type="number" class="form-control" id="saving-held" placeholder="1,000">
+            <form class="px-4 py-5">
+               <div class="col-sm-3">
+                  <label for="savings-held" class="savings">Saving</label>
+                  <input type="text" class="form-control" id="saving-held" placeholder="1,000">
                </div>
-               <div class="mb-3">
+               <div class="col-sm-3">
                   <label for="current-rates" class="current-rate">Current Rates</label>
-                  <input type="number" class="form-control" id="current-rate" placeholder="1.25">
+                  <input type="text" class="form-control" id="current-rate" placeholder="1.25">
+                  <label for="instant" class="instant">Instant?</label>
+                  <div class="input-group mb-3">
+                     <select class="form-select" id="instant" aria-label="Example select with button addon">
+                        <option selected>Please.</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
                </div>
-               <div class="input-group mb-3">
-                  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                     <option selected>Choose...</option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                  </select>
-               </div>
-         </div>
-         <button type="submit" class="btn btn-primary">Sign in</button>
+               <button type="submit" class="btn btn-primary">Calculate</button>
          </form>
          <div id="intro">
          </div>
