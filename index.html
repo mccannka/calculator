@@ -12,34 +12,63 @@
    </head>
    <body>
       <div id="fullpage-container">
-         <header>
-            <!-- Nav Bar - Include toggles to hide irrelevant page content -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-               <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Savings Comparison</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           Dropdown
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </div>
+      <header>
+         <!-- Nav Bar - Include toggles to hide irrelevant page content -->
+         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#">Savings Comparison</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                     </li>
+                  </ul>
                </div>
-            </nav>
-            <!-- Determine where main content area should be-->
-         </header>
-         <section id="hero-section">
-         </section>
+            </div>
+         </nav>
+         <!-- Determine where main content area should be-->
+      </header>
+      <!-- Hero shelf & calculator inputs-->
+      <div id="hero">
+         <div class="container-fluid">
+            <form class="px-4 py-3">
+               <div class="mb-3">
+                  <label for="savings-held" class="savings">Savings</label>
+                  <input type="number" class="form-control" id="saving-held" placeholder="1,000">
+               </div>
+               <div class="mb-3">
+                  <label for="current-rates" class="current-rate">Current Rates</label>
+                  <input type="number" class="form-control" id="current-rate" placeholder="1.25">
+               </div>
+               <div class="input-group mb-3">
+                  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                     <option selected>Choose...</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+         </div>
+         <button type="submit" class="btn btn-primary">Sign in</button>
+         </form>
+         <div id="intro">
+         </div>
+         <div id = "results">
+         </div>
+         <div id = "providers">
+         </div>
+         <footer>
+         </footer>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
    </body>
    </div>
